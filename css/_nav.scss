@@ -1,0 +1,19 @@
+// navbar starts from here 
+.navbar {
+    .navbar-brand{
+        img{
+            width: 4rem;
+        }
+        span{
+            font-family: 'Fira Sans', sans-serif;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            a {
+                font-family: 'Poppins', sans-serif; 
+
+            }
+        }
+    }
+}

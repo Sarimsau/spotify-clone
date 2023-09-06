@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Red+Rose&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*poppins font family  
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Rose', cursive; 
+*/
+/*poppins font family  
+font-family: 'Fira Sans', sans-serif;
+*/
+body {
+  background-color: antiquewhite !important;
+}
+
+.navbar .navbar-brand img {
+  width: 4rem;
+}
+.navbar .navbar-brand span {
+  font-family: "Fira Sans", sans-serif;
+}
+.navbar .navbar-nav .nav-item a {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  min-height: 38rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  padding: 34px 34px !important;
+  border-radius: 12px;
+  background: url("../bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.main-container .songItemContainer {
+  margin-top: 3rem;
+}
+.main-container .songItemContainer .songItem {
+  background-color: white;
+  color: black;
+  width: 80%;
+  border-radius: 3rem;
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container .songItemContainer .songItem .songName {
+  padding: 0px 12px;
+}
+.main-container .songItemContainer .songItem img {
+  width: 4rem;
+  border-radius: 3rem;
+}
+.main-container .songItemContainer .songItem .songListPlay span {
+  margin-left: 5rem;
+}
+.main-container .songItemContainer .songItem .songListPlay i {
+  cursor: pointer;
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom #myProgressBar {
+  min-width: 75rem;
+  cursor: pointer;
+}
+.bottom .icons {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.bottom .songInfo {
+  position: absolute;
+  left: 10vw;
+  color: white;
+}
+.bottom .songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}/*# sourceMappingURL=main.css.map */

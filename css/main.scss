@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "fonts";
+@import "mixin";
+
+body {
+    background-color: antiquewhite !important;
+}
+
+@import "_nav";
+
+.main-container {
+    min-height: 38rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    padding: 34px 34px !important;
+    border-radius: 12px;
+    background: url('../bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .songItemContainer {
+
+        margin-top: 3rem;
+
+        .songItem {
+            background-color: white;
+            color: black;
+            width: 80%;
+            border-radius: 3rem;
+            margin: 1rem 0rem;
+            @include flex;
+            justify-content: space-between;
+
+
+            .songName {
+                padding: 0px 12px;
+            }
+
+            img {
+                width: 4rem;
+                border-radius: 3rem;
+            }
+
+            .songListPlay {
+                span {
+                    margin-left: 5rem;
+                }
+
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// bottom part for song playing starts 
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    @include flex;
+    flex-direction: column;
+
+    #myProgressBar {
+        min-width: 75rem;
+        cursor: pointer;
+
+    }
+
+    .icons {
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+    .songInfo {
+        position: absolute;
+        left: 10vw;
+        color: white;
+
+        img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+    }
+}
+
+// bottom part for song playing ends 
